@@ -25,7 +25,7 @@ pip install pdfplumber pandas xlwings inflect openpyxl
     <li>Place the PDF file you want to process in the same directory as this script, and name it <code>1.pdf</code>.</li>
     <li>Ensure the Excel template file (<code>order_template.xls</code>) is in the same directory.</li>
     <li>Run the script. The script will extract table data from the PDF and populate it into the specified cells of the Excel template.</li>
-    <li>The filled Excel file will be saved as <code>B2409000313.xls</code>.</li>
+    <li>The filled Excel file will be saved as <code>.xls</code>.</li>
 </ol>
 
 <h2>Code Overview</h2>

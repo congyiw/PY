@@ -39,8 +39,8 @@ wb = app.books.open('order_template.xls')
 sht=wb.sheets('Sheet')
 sht.range('I2').value = today_date
 sht.range('J11').value = f"Project NO:" 
-sht.range('I11').value = f"152426" 
-sht.range('I7').value = f"B2409000313" 
+sht.range('I11').value = f"" 
+sht.range('I7').value = f"" 
 first_cell_row = 17 #start from row 17
 i = 0
 for item in order_total:
@@ -75,6 +75,6 @@ if last_written_row < 84:
 sht.range(f'J{first_cell_row}:J{last_written_row}').value = sht.range(f'J{first_cell_row}:J{last_written_row}').value
 # Delete columns K and L
 sht.range('K:L').api.Delete()
-wb.save('B2409000313.xls')
+wb.save('.xls')
 wb.close
 app.quit()
